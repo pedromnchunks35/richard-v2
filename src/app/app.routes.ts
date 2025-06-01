@@ -10,5 +10,17 @@ export const routes: Routes = [
     path: 'products',
     loadComponent: () => import('./components/products/products.component').then(m => m.ProductsComponent),
     pathMatch: 'full'
+  },
+  {
+    path: 'enterprise',
+    loadComponent: ()=>import('./components/enterprise/enterprise.component').then(m=>m.EnterpriseComponent)
+  },
+  {
+    path: 'contacts',
+    loadComponent: ()=>import('./components/contacts/contacts.component').then(m=>m.ContactsComponent)
+  },
+  {
+    path: 'shopping-cart',
+    loadComponent: ()=>import('./components/shopping-cart/shopping-cart.component').then(m=>m.ShoppingCartComponent)
   }
 ];

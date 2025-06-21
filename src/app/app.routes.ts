@@ -22,5 +22,9 @@ export const routes: Routes = [
   {
     path: 'shopping-cart',
     loadComponent: ()=>import('./components/shopping-cart/shopping-cart.component').then(m=>m.ShoppingCartComponent)
+  },
+  {
+    path: 'final-form',
+    loadComponent: ()=>import('./components/final-form/final-form.component').then(m=>m.FinalFormComponent)
   }
 ];
